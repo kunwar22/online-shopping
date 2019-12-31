@@ -29,8 +29,9 @@
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom Theme CSS -->
+<!-- Custom Theme CSS 
 <link href="${css}/bootstrap-Cerulean-Theme.css" rel="stylesheet">
+-->
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -62,6 +63,11 @@
 			<!-- Load only when user clicks contact -->
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			
+			<!-- Load only when user clicks contact -->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 		</div>
