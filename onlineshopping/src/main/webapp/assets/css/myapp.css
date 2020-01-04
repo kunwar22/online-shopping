@@ -7,3 +7,8 @@
 body {
   padding-top: 80px;
 }
+
+.dataTableImage{
+	width: 100px;
+	hight: 100px;
+}

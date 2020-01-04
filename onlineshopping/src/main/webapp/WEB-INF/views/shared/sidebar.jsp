@@ -1,5 +1,5 @@
-<h1 class="my-4">Shop Name</h1>
-<div class="list-group">
+<h2 class="my-4">Shop Name</h2>
+<div class="list-group" style="margin-bottom: 20px">
 	<c:forEach items="${categories}" var="category">
 		<a href="${contextRoot}/show/category/${category.id}/products" class="list-group-item" id="a_${category.name}">${category.name}</a>
 	</c:forEach>
