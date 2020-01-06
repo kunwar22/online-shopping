@@ -18,6 +18,10 @@
    		<property name="suffix" value=".jsp"/>
    </bean>
    
+   <!-- Multipart Resolver -->
+   
+   <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver"></bean>
+   
    <!-- Loading static resources -->
    <mvc:annotation-driven/>
    <mvc:resources location="/assets/" mapping="/resources/**"></mvc:resources>
