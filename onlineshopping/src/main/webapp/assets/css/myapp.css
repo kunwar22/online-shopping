@@ -68,6 +68,10 @@ input:checked + .slider:before {
 }
 /**************************************************************/
 
+.table-responsive{
+	overflow-x: inherit;
+}
+
 
 
 
